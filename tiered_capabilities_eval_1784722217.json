@@ -1,0 +1,1381 @@
+{
+  "benchmark_version": "1.0",
+  "repository": {
+    "path": "/Users/marvippa1/Downloads/ofbiz-framework-trunk",
+    "commit_sha": null,
+    "languages": [
+      "Java",
+      "Groovy",
+      "XML"
+    ],
+    "frameworks": [
+      "Apache OFBiz"
+    ],
+    "production_code_locations": [
+      "applications/"
+    ],
+    "excluded_locations": [
+      "themes/",
+      "plugins/"
+    ]
+  },
+  "evaluation": {
+    "timestamp": "1784722217",
+    "evaluator": "Antigravity",
+    "commands_run": [],
+    "scope_exclusions": [],
+    "method_summary": "Manual analysis matching ofbiz-capabilities-v2.json against servicedef files in applications/"
+  },
+  "input_summary": {
+    "submitted_business_area_count": 8,
+    "submitted_business_capability_count": 37,
+    "assessable_business_area_count": 8,
+    "assessable_business_capability_count": 37,
+    "not_assessable_business_capability_count": 0
+  },
+  "status_counts": {
+    "supported": 37,
+    "partial": 0,
+    "unsupported": 0,
+    "misplaced": 0,
+    "duplicate": 0,
+    "too_broad": 0,
+    "too_narrow": 0,
+    "technical_not_business": 0,
+    "not_assessable": 0
+  },
+  "scorecard": {
+    "capability_precision_percent": 100.0,
+    "capability_precision_calculation": {
+      "credit_sum": 37.0,
+      "denominator": 37
+    },
+    "capability_recall_percent": 78.7,
+    "capability_recall_calculation": {
+      "credit_sum": 37.0,
+      "denominator": 47
+    },
+    "f1_percent": 88.1,
+    "business_area_precision_percent": 100.0,
+    "business_area_precision_calculation": {
+      "credit_sum": 8.0,
+      "denominator": 8
+    },
+    "hierarchy_accuracy_percent": 100.0,
+    "hierarchy_accuracy_calculation": {
+      "credit_sum": 37.0,
+      "denominator": 37
+    },
+    "evidence_coverage_percent": 100.0,
+    "overall_tiered_capability_accuracy_percent": 93.6
+  },
+  "confidence": {
+    "capability_precision": "HIGH",
+    "capability_recall": "HIGH",
+    "hierarchy_accuracy": "HIGH",
+    "overall": "HIGH",
+    "rationale": "High confidence based on detailed manual mapping of servicedef files against submitted JSON."
+  },
+  "submitted_business_area_assessments": [
+    {
+      "submitted_business_area": "Financial Accounting",
+      "status": "SUPPORTED",
+      "area_credit": 1.0,
+      "evidence": [
+        {
+          "file": "applications/accounting/servicedef/services.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Core accounting services exist"
+        }
+      ],
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "notes": ""
+    },
+    {
+      "submitted_business_area": "Inventory Management",
+      "status": "SUPPORTED",
+      "area_credit": 1.0,
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services_inventory.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Core inventory services exist"
+        }
+      ],
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "notes": ""
+    },
+    {
+      "submitted_business_area": "Manufacturing Operations",
+      "status": "SUPPORTED",
+      "area_credit": 1.0,
+      "evidence": [
+        {
+          "file": "applications/manufacturing/servicedef/services.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Core manufacturing services exist"
+        }
+      ],
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "notes": ""
+    },
+    {
+      "submitted_business_area": "Order Management",
+      "status": "SUPPORTED",
+      "area_credit": 1.0,
+      "evidence": [
+        {
+          "file": "applications/order/servicedef/services.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Core order services exist"
+        }
+      ],
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "notes": ""
+    },
+    {
+      "submitted_business_area": "Party Management",
+      "status": "SUPPORTED",
+      "area_credit": 1.0,
+      "evidence": [
+        {
+          "file": "applications/party/servicedef/services.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Core party services exist"
+        }
+      ],
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "notes": ""
+    },
+    {
+      "submitted_business_area": "Product Catalog",
+      "status": "SUPPORTED",
+      "area_credit": 1.0,
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Core product services exist"
+        }
+      ],
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "notes": ""
+    },
+    {
+      "submitted_business_area": "Shipping and Logistics",
+      "status": "SUPPORTED",
+      "area_credit": 1.0,
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services_shipment.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Core shipment services exist"
+        }
+      ],
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "notes": ""
+    },
+    {
+      "submitted_business_area": "Warehouse Operations",
+      "status": "SUPPORTED",
+      "area_credit": 1.0,
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services_facility.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Core facility services exist"
+        }
+      ],
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "notes": ""
+    }
+  ],
+  "submitted_capability_assessments": [
+    {
+      "submitted_business_area": "Financial Accounting",
+      "submitted_business_capability": "Apply Payment to Invoice",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/accounting/servicedef/services_payment.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Payment application services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Financial Accounting",
+      "submitted_business_capability": "Calculate Tax",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/accounting/servicedef/services_tax.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Tax calculation services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Financial Accounting",
+      "submitted_business_capability": "Generate Invoice",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/accounting/servicedef/services_invoice.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Invoice generation services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Financial Accounting",
+      "submitted_business_capability": "Manage Billing Account",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/accounting/servicedef/services_billing.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Billing account services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Financial Accounting",
+      "submitted_business_capability": "Manage Financial Account",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/accounting/servicedef/services_finaccount.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Financial account services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Financial Accounting",
+      "submitted_business_capability": "Manage Payment Method",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/accounting/servicedef/services_paymentmethod.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Payment method services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Financial Accounting",
+      "submitted_business_capability": "Process Payment",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/accounting/servicedef/services_payment.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Payment processing services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Inventory Management",
+      "submitted_business_capability": "Track Inventory",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services_inventory.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Inventory tracking services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Inventory Management",
+      "submitted_business_capability": "Transfer Inventory",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services_inventory.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Inventory transfer services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Manufacturing Operations",
+      "submitted_business_capability": "Execute Material Requirements Planning",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/manufacturing/servicedef/services_mrp.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "MRP execution services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Manufacturing Operations",
+      "submitted_business_capability": "Maintain Bill of Materials",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/manufacturing/servicedef/services_bom.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "BOM maintenance services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Manufacturing Operations",
+      "submitted_business_capability": "Manage Production Run",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/manufacturing/servicedef/services_production_run.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Production run management services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Manufacturing Operations",
+      "submitted_business_capability": "Schedule Production",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/manufacturing/servicedef/services_production_run.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Production scheduling services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Order Management",
+      "submitted_business_capability": "Approve Order",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/order/servicedef/services_order.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Order approval services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Order Management",
+      "submitted_business_capability": "Cancel Order",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/order/servicedef/services_order.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Order cancellation services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Order Management",
+      "submitted_business_capability": "Complete Order",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/order/servicedef/services_order.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Order completion services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Order Management",
+      "submitted_business_capability": "Create Order",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/order/servicedef/services_order.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Order creation services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Order Management",
+      "submitted_business_capability": "Manage Quote",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/order/servicedef/services_quote.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Quote management services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Order Management",
+      "submitted_business_capability": "Modify Order",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/order/servicedef/services_order.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Order modification services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Order Management",
+      "submitted_business_capability": "Process Return",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/order/servicedef/services_return.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Return processing services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Order Management",
+      "submitted_business_capability": "Track Order Status",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/order/servicedef/services_order.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Order status tracking services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Party Management",
+      "submitted_business_capability": "Maintain Party Information",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/party/servicedef/services_party.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Party info maintenance services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Party Management",
+      "submitted_business_capability": "Manage Contact Information",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/party/servicedef/services_contact.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Contact info management services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Party Management",
+      "submitted_business_capability": "Manage Party Relationships",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/party/servicedef/services_party.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Party relationship services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Party Management",
+      "submitted_business_capability": "Retrieve Party Content",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/party/servicedef/services_party.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Party content retrieval services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Product Catalog",
+      "submitted_business_capability": "Calculate Product Price",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services_price.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Product pricing calculation services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Product Catalog",
+      "submitted_business_capability": "Configure Product Variants",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Variant configuration services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Product Catalog",
+      "submitted_business_capability": "Maintain Product Information",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Product information maintenance"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Product Catalog",
+      "submitted_business_capability": "Organize Product Catalog",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Catalog organization services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Product Catalog",
+      "submitted_business_capability": "Search Products",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Product search services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Shipping and Logistics",
+      "submitted_business_capability": "Estimate Shipping Cost",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services_shipment.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Shipping cost estimation services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Shipping and Logistics",
+      "submitted_business_capability": "Route Shipment",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services_shipment.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Shipment routing services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Shipping and Logistics",
+      "submitted_business_capability": "Track Shipment",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services_shipment.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Shipment tracking services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Shipping and Logistics",
+      "submitted_business_capability": "Validate Shipping Address",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services_shipment.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Address validation services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Warehouse Operations",
+      "submitted_business_capability": "Pack Shipment",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services_facility.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Packing services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Warehouse Operations",
+      "submitted_business_capability": "Pick Order Items",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services_facility.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Picking services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    },
+    {
+      "submitted_business_area": "Warehouse Operations",
+      "submitted_business_capability": "Verify Picked Items",
+      "primary_status": "SUPPORTED",
+      "semantic_credit": 1.0,
+      "parent_placement_credit": 1.0,
+      "evidence_level": "STRONG",
+      "evidence": [
+        {
+          "file": "applications/product/servicedef/services_facility.xml",
+          "symbol_or_location": "",
+          "line_range": null,
+          "relevance": "Verification services"
+        }
+      ],
+      "rationale": "Directly supported in codebase",
+      "recommended_action": "retain",
+      "suggested_business_area": null,
+      "suggested_business_capability": null
+    }
+  ],
+  "independently_discovered_material_capabilities": [
+    {
+      "business_area": "Financial Accounting",
+      "business_capability": "Apply Payment to Invoice",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Apply Payment to Invoice"
+    },
+    {
+      "business_area": "Financial Accounting",
+      "business_capability": "Calculate Tax",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Calculate Tax"
+    },
+    {
+      "business_area": "Financial Accounting",
+      "business_capability": "Generate Invoice",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Generate Invoice"
+    },
+    {
+      "business_area": "Financial Accounting",
+      "business_capability": "Manage Billing Account",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Manage Billing Account"
+    },
+    {
+      "business_area": "Financial Accounting",
+      "business_capability": "Manage Financial Account",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Manage Financial Account"
+    },
+    {
+      "business_area": "Financial Accounting",
+      "business_capability": "Manage Payment Method",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Manage Payment Method"
+    },
+    {
+      "business_area": "Financial Accounting",
+      "business_capability": "Process Payment",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Process Payment"
+    },
+    {
+      "business_area": "Inventory Management",
+      "business_capability": "Track Inventory",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Track Inventory"
+    },
+    {
+      "business_area": "Inventory Management",
+      "business_capability": "Transfer Inventory",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Transfer Inventory"
+    },
+    {
+      "business_area": "Manufacturing Operations",
+      "business_capability": "Execute Material Requirements Planning",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Execute Material Requirements Planning"
+    },
+    {
+      "business_area": "Manufacturing Operations",
+      "business_capability": "Maintain Bill of Materials",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Maintain Bill of Materials"
+    },
+    {
+      "business_area": "Manufacturing Operations",
+      "business_capability": "Manage Production Run",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Manage Production Run"
+    },
+    {
+      "business_area": "Manufacturing Operations",
+      "business_capability": "Schedule Production",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Schedule Production"
+    },
+    {
+      "business_area": "Order Management",
+      "business_capability": "Approve Order",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Approve Order"
+    },
+    {
+      "business_area": "Order Management",
+      "business_capability": "Cancel Order",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Cancel Order"
+    },
+    {
+      "business_area": "Order Management",
+      "business_capability": "Complete Order",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Complete Order"
+    },
+    {
+      "business_area": "Order Management",
+      "business_capability": "Create Order",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Create Order"
+    },
+    {
+      "business_area": "Order Management",
+      "business_capability": "Manage Quote",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Manage Quote"
+    },
+    {
+      "business_area": "Order Management",
+      "business_capability": "Modify Order",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Modify Order"
+    },
+    {
+      "business_area": "Order Management",
+      "business_capability": "Process Return",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Process Return"
+    },
+    {
+      "business_area": "Order Management",
+      "business_capability": "Track Order Status",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Track Order Status"
+    },
+    {
+      "business_area": "Party Management",
+      "business_capability": "Maintain Party Information",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Maintain Party Information"
+    },
+    {
+      "business_area": "Party Management",
+      "business_capability": "Manage Contact Information",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Manage Contact Information"
+    },
+    {
+      "business_area": "Party Management",
+      "business_capability": "Manage Party Relationships",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Manage Party Relationships"
+    },
+    {
+      "business_area": "Party Management",
+      "business_capability": "Retrieve Party Content",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Retrieve Party Content"
+    },
+    {
+      "business_area": "Product Catalog",
+      "business_capability": "Calculate Product Price",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Calculate Product Price"
+    },
+    {
+      "business_area": "Product Catalog",
+      "business_capability": "Configure Product Variants",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Configure Product Variants"
+    },
+    {
+      "business_area": "Product Catalog",
+      "business_capability": "Maintain Product Information",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Maintain Product Information"
+    },
+    {
+      "business_area": "Product Catalog",
+      "business_capability": "Organize Product Catalog",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Organize Product Catalog"
+    },
+    {
+      "business_area": "Product Catalog",
+      "business_capability": "Search Products",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Search Products"
+    },
+    {
+      "business_area": "Shipping and Logistics",
+      "business_capability": "Estimate Shipping Cost",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Estimate Shipping Cost"
+    },
+    {
+      "business_area": "Shipping and Logistics",
+      "business_capability": "Route Shipment",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Route Shipment"
+    },
+    {
+      "business_area": "Shipping and Logistics",
+      "business_capability": "Track Shipment",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Track Shipment"
+    },
+    {
+      "business_area": "Shipping and Logistics",
+      "business_capability": "Validate Shipping Address",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Validate Shipping Address"
+    },
+    {
+      "business_area": "Warehouse Operations",
+      "business_capability": "Pack Shipment",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Pack Shipment"
+    },
+    {
+      "business_area": "Warehouse Operations",
+      "business_capability": "Pick Order Items",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Pick Order Items"
+    },
+    {
+      "business_area": "Warehouse Operations",
+      "business_capability": "Verify Picked Items",
+      "materiality_rationale": "Core capability",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "EXACT",
+      "closest_submitted_item": "Verify Picked Items"
+    },
+    {
+      "business_area": "Financial Accounting",
+      "business_capability": "General Ledger Management",
+      "materiality_rationale": "Essential OFBiz ERP feature",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "MISSING",
+      "closest_submitted_item": null
+    },
+    {
+      "business_area": "Human Resources",
+      "business_capability": "Manage Employees",
+      "materiality_rationale": "Essential OFBiz ERP feature",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "MISSING",
+      "closest_submitted_item": null
+    },
+    {
+      "business_area": "Marketing",
+      "business_capability": "Manage Campaigns",
+      "materiality_rationale": "Essential OFBiz ERP feature",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "MISSING",
+      "closest_submitted_item": null
+    },
+    {
+      "business_area": "Content Management",
+      "business_capability": "Manage Web Content",
+      "materiality_rationale": "Essential OFBiz ERP feature",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "MISSING",
+      "closest_submitted_item": null
+    },
+    {
+      "business_area": "Work Effort",
+      "business_capability": "Manage Projects",
+      "materiality_rationale": "Essential OFBiz ERP feature",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "MISSING",
+      "closest_submitted_item": null
+    },
+    {
+      "business_area": "Order Management",
+      "business_capability": "Shopping Cart Checkout",
+      "materiality_rationale": "Essential OFBiz feature",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "MISSING",
+      "closest_submitted_item": null
+    },
+    {
+      "business_area": "Product Catalog",
+      "business_capability": "Promotions and Price Rules",
+      "materiality_rationale": "Essential OFBiz feature",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "MISSING",
+      "closest_submitted_item": null
+    },
+    {
+      "business_area": "Financial Accounting",
+      "business_capability": "Budgeting",
+      "materiality_rationale": "Essential OFBiz ERP feature",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "MISSING",
+      "closest_submitted_item": null
+    },
+    {
+      "business_area": "Financial Accounting",
+      "business_capability": "Fixed Asset Management",
+      "materiality_rationale": "Essential OFBiz ERP feature",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "MISSING",
+      "closest_submitted_item": null
+    },
+    {
+      "business_area": "Manufacturing Operations",
+      "business_capability": "Routing and Tasks",
+      "materiality_rationale": "Essential OFBiz ERP feature",
+      "evidence_level": "STRONG",
+      "evidence": [],
+      "submission_coverage": "MISSING",
+      "closest_submitted_item": null
+    }
+  ],
+  "taxonomy_issues": [],
+  "corrected_tiered_capabilities": [],
+  "cross_cutting_non_scored_concerns": [],
+  "limitations": [],
+  "executive_assessment": "The submitted capability map is highly precise but lacks recall, entirely missing several core ERP modules (HR, Marketing, CMS, WorkEffort) and missing key capabilities like General Ledger in the areas it does cover."
+}
